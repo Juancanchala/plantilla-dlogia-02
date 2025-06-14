@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- ✅ METADATOS GENERALES -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plantilla Tech Empresarial | D'LOGIA</title>
+  <meta name="description" content="Landing page premium con enfoque tecnológico y empresarial. Desarrollada por D'LOGIA para alto impacto visual y comercial.">
+
+  <!-- ✅ FUENTE INTER -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- ✅ TAILWIND CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    };
+  </script>
+
+  <!-- ✅ AOS (Animación de scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- ✅ LUCIDE ICONOS -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- ✅ ESTILOS PERSONALIZADOS -->
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; }
+    .card {
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: translateY(-6px) scale(1.02);
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+    }
+    .card img {
+      transition: transform 0.3s ease;
+    }
+    .card:hover img {
+      transform: scale(1.05);
+    }
+    .glass-effect {
+      backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.85);
+    }
+    .gradient-text {
+      background: linear-gradient(to right, #6366f1, #9333ea);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+
+<!-- ✅ INICIO DEL CUERPO -->
+<body id="body" class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+
+
+ <!-- 🔹 BARRA DE NAVEGACIÓN -->
+<nav class="fixed top-0 left-0 w-full bg-white border-b border-gray-200 z-50">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex justify-center gap-8 text-sm font-semibold text-indigo-700">
+    <a href="#inicio" class="hover:text-indigo-600 transition">Inicio</a>
+    <a href="#servicios" class="hover:text-indigo-600 transition">Servicios</a>
+    <a href="#clientes" class="hover:text-indigo-600 transition">Clientes</a>
+    <a href="#sobre" class="hover:text-indigo-600 transition">Sobre Nosotros</a>
+    <a href="#contacto" class="hover:text-indigo-600 transition">Contacto</a>
+  </div>
+</nav>
+
+  <!-- 🔹 HERO PRINCIPAL CON FONDO ANIMADO -->
+<style>
+  .aurora-bg {
+    background: linear-gradient(-45deg, #1e3a8a, #9333ea, #6366f1, #0f172a);
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
+  }
+
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+</style>
+
+<section id="inicio" class="pt-28 pb-24 aurora-bg text-white text-center" data-aos="fade-up">
+  <div class="max-w-4xl mx-auto px-6">
+    <h1 class="text-5xl font-extrabold mb-4 gradient-text">Tecnología visual para negocios inteligentes</h1>
+    <p class="text-lg text-gray-200 mb-6">
+      Potencia tu presencia digital con esta plantilla optimizada para empresas modernas, consultores y freelancers globales.
+    </p>
+    <a href="#servicios" class="inline-flex items-center gap-2 bg-white text-indigo-700 px-6 py-3 rounded-xl font-semibold shadow hover:bg-gray-100 transition">
+      <i data-lucide="rocket"></i> Ver beneficios
+    </a>
+  </div>
+</section>
+
+
+  <!-- 🔹 SECCIÓN DE SERVICIOS -->
+  <section id="servicios" class="py-20 bg-indigo-50" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold text-indigo-700 mb-12">Soluciones que incluye esta plantilla</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Servicio 1 -->
+        <div class="bg-white p-6 rounded-xl shadow card">
+          <i data-lucide="layout-template" class="w-8 h-8 text-indigo-500 mb-2 mx-auto"></i>
+          <h4 class="text-xl font-semibold text-indigo-700 mb-3">Diseño Modular</h4>
+          <p class="text-gray-600 text-sm">Secciones reutilizables y organizadas por bloques para escalar según tus necesidades.</p>
+        </div>
+        <!-- Servicio 2 -->
+        <div class="bg-white p-6 rounded-xl shadow card">
+          <i data-lucide="smartphone" class="w-8 h-8 text-indigo-500 mb-2 mx-auto"></i>
+          <h4 class="text-xl font-semibold text-indigo-700 mb-3">100% Responsive</h4>
+          <p class="text-gray-600 text-sm">Diseño limpio, moderno, adaptable y optimizado para cualquier dispositivo.</p>
+        </div>
+        <!-- Servicio 3 -->
+        <div class="bg-white p-6 rounded-xl shadow card">
+          <i data-lucide="cpu" class="w-8 h-8 text-indigo-500 mb-2 mx-auto"></i>
+          <h4 class="text-xl font-semibold text-indigo-700 mb-3">Enfoque Tech & IA</h4>
+          <p class="text-gray-600 text-sm">Ideal para negocios digitales, automatización, inteligencia artificial y consultoría.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+ <!-- 🔹 SECCIÓN DE PROYECTOS DESTACADOS CON SCROLL -->
+<section id="proyectos" class="py-20 bg-white text-center" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto px-4">
+    <h3 class="text-3xl font-bold text-indigo-700 mb-6">🚀 Proyectos realizados con esta plantilla</h3>
+    <p class="text-gray-600 mb-10 max-w-2xl mx-auto text-sm">
+      Mira cómo esta plantilla puede adaptarse a distintos tipos de páginas. ¡Elige tu estilo favorito!
+    </p>
+
+    <div class="overflow-x-auto no-scrollbar whitespace-nowrap pb-2">
+      <div class="inline-flex gap-6">
+        <!-- Proyecto 1 -->
+        <div class="w-72 flex-shrink-0 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition card">
+          <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=800&q=80" alt="Proyecto 1" class="w-full h-52 object-cover">
+          <div class="p-4">
+            <h4 class="text-lg font-semibold text-indigo-600">Landing de Coaching</h4>
+            <p class="text-sm text-gray-500">Ideal para marca personal y servicios de mentoría.</p>
+          </div>
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div class="w-72 flex-shrink-0 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition card">
+          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80" alt="Proyecto 2" class="w-full h-52 object-cover">
+          <div class="p-4">
+            <h4 class="text-lg font-semibold text-indigo-600">Tienda de Accesorios</h4>
+            <p class="text-sm text-gray-500">Diseño adaptado a ecommerce y catálogos pequeños.</p>
+          </div>
+        </div>
+
+        <!-- Proyecto 3 -->
+        <div class="w-72 flex-shrink-0 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition card">
+          <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80" alt="Proyecto 3" class="w-full h-52 object-cover">
+          <div class="p-4">
+            <h4 class="text-lg font-semibold text-indigo-600">Sitio de Agencia Creativa</h4>
+            <p class="text-sm text-gray-500">Ideal para estudios de diseño, desarrollo o marketing.</p>
+          </div>
+        </div>
+
+        <!-- Proyecto 4 -->
+        <div class="w-72 flex-shrink-0 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition card">
+          <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=800&q=80" alt="Proyecto 4" class="w-full h-52 object-cover">
+          <div class="p-4">
+            <h4 class="text-lg font-semibold text-indigo-600">Landing para Eventos</h4>
+            <p class="text-sm text-gray-500">Ideal para conferencias o lanzamientos de productos.</p>
+          </div>
+        </div>
+
+        <!-- Proyecto 5 -->
+        <div class="w-72 flex-shrink-0 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition card">
+          <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=800&q=80" alt="Proyecto 5" class="w-full h-52 object-cover">
+          <div class="p-4">
+            <h4 class="text-lg font-semibold text-indigo-600">Portafolio Creativo</h4>
+            <p class="text-sm text-gray-500">Para fotógrafos, artistas o diseñadores independientes.</p>
+          </div>
+        </div>
+
+        <!-- Proyecto 6 -->
+        <div class="w-72 flex-shrink-0 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition card">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Proyecto 6" class="w-full h-52 object-cover">
+          <div class="p-4">
+            <h4 class="text-lg font-semibold text-indigo-600">Página para Freelancers</h4>
+            <p class="text-sm text-gray-500">Perfecta para mostrar habilidades y servicios profesionales.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+<!-- 🔹 SECCIÓN DE TESTIMONIOS MEJORADA -->
+<section id="testimonios" class="py-20 bg-indigo-50" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h3 class="text-3xl font-bold text-indigo-700 mb-12">💬 Opiniones de nuestros clientes</h3>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+
+      <!-- Testimonio 1 -->
+      <div class="bg-white p-6 rounded-xl shadow card">
+        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Andrea" class="w-12 h-12 rounded-full mb-3">
+        <p class="text-gray-600 mb-4">"La plantilla de D’LOGIA transformó nuestra web. Es rápida, profesional y hermosa."</p>
+        <p class="font-semibold text-indigo-700">Andrea P.</p>
+        <div class="flex mt-2 gap-1 text-yellow-400">
+          <i data-lucide="star" class="w-4 h-4 fill-yellow-400"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-yellow-400"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-yellow-400"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-yellow-400"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-yellow-400"></i>
+        </div>
+      </div>
+
+      <!-- Testimonio 2 -->
+      <div class="bg-white p-6 rounded-xl shadow card">
+        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Carlos" class="w-12 h-12 rounded-full mb-3">
+        <p class="text-gray-600 mb-4">"Excelente atención y personalización. Nos ayudaron a lanzar nuestro portafolio digital en tiempo récord."</p>
+        <p class="font-semibold text-indigo-700">Carlos R.</p>
+        <div class="flex mt-2 gap-1 text-yellow-400">
+          <i data-lucide="star" class="w-4 h-4 fill-yellow-400"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-yellow-400"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-yellow-400"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-yellow-400"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-yellow-400"></i>
+        </div>
+      </div>
+
+      <!-- Testimonio 3 (4.5 estrellas) -->
+      <div class="bg-white p-6 rounded-xl shadow card">
+        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Luisa" class="w-12 h-12 rounded-full mb-3">
+        <p class="text-gray-600 mb-4">"Muy recomendados. Su diseño modular se adaptó perfecto a nuestro negocio. ¡Gran inversión!"</p>
+        <p class="font-semibold text-indigo-700">Luisa M.</p>
+        <div class="flex mt-2 gap-1 text-yellow-400">
+          <i data-lucide="star" class="w-4 h-4 fill-yellow-400"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-yellow-400"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-yellow-400"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-yellow-400"></i>
+          <i data-lucide="star-half" class="w-4 h-4 fill-yellow-400"></i>
+        </div>
+      </div>
+
+      <!-- Testimonio 4 (4.5 estrellas) -->
+      <div class="bg-white p-6 rounded-xl shadow card">
+        <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="David" class="w-12 h-12 rounded-full mb-3">
+        <p class="text-gray-600 mb-4">"Gracias a D’LOGIA ahora automatizamos procesos clave. Gran equipo, atentos y eficaces."</p>
+        <p class="font-semibold text-indigo-700">David T.</p>
+        <div class="flex mt-2 gap-1 text-yellow-400">
+          <i data-lucide="star" class="w-4 h-4 fill-yellow-400"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-yellow-400"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-yellow-400"></i>
+          <i data-lucide="star" class="w-4 h-4 fill-yellow-400"></i>
+          <i data-lucide="star-half" class="w-4 h-4 fill-yellow-400"></i>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- 🔹 SECCIÓN DE CLIENTES INTERNACIONALES -->
+<section id="clientes" class="py-20 bg-white" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h3 class="text-3xl font-bold text-indigo-700 mb-8">🌍 Confían en nuestro diseño</h3>
+    <p class="text-gray-600 text-sm mb-10 max-w-xl mx-auto">
+      D’LOGIA ha sido implementado en diversos países para potenciar marcas con soluciones tecnológicas y visuales adaptadas a cada mercado.
+    </p>
+
+    <div class="flex flex-wrap justify-center items-center gap-6">
+      <div class="flex items-center gap-2">
+        <img src="https://flagcdn.com/w40/es.png" alt="España" class="h-6"> <span class="text-sm">España</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <img src="https://flagcdn.com/w40/us.png" alt="EE.UU" class="h-6"> <span class="text-sm">EE.UU</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <img src="https://flagcdn.com/w40/mx.png" alt="México" class="h-6"> <span class="text-sm">México</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <img src="https://flagcdn.com/w40/cl.png" alt="Chile" class="h-6"> <span class="text-sm">Chile</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <img src="https://flagcdn.com/w40/co.png" alt="Colombia" class="h-6"> <span class="text-sm">Colombia</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <img src="https://flagcdn.com/w40/br.png" alt="Brasil" class="h-6"> <span class="text-sm">Brasil</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <img src="https://flagcdn.com/w40/ca.png" alt="Canadá" class="h-6"> <span class="text-sm">Canadá</span>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 🔘 BOTÓN FLOTANTE DEL ASISTENTE VIRTUAL -->
+<button onclick="abrirChatbot()"
+  class="fixed bottom-6 right-6 z-50 bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-3 rounded-full shadow-lg flex items-center gap-2 transition">
+  <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" alt="DILO" class="w-5 h-5"> DILO
+</button>
+
+<!-- 💬 MODAL DE SIMULACIÓN DE CHAT -->
+<div id="modalChatbot" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+  <div class="bg-gray-900 text-white rounded-2xl p-5 max-w-sm w-full shadow-2xl relative border border-indigo-600">
+    <button onclick="cerrarChatbot()" class="absolute top-3 right-4 text-gray-400 hover:text-red-500">
+      <i data-lucide="x"></i>
+    </button>
+
+    <div class="text-center">
+      <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" class="w-10 h-10 mx-auto mb-2" alt="DILO">
+      <h2 class="text-xl font-bold text-indigo-400 mb-2">¡Hola! Soy DILO 🤖</h2>
+      <p class="text-sm text-gray-300 mb-4">¿Te gustaría automatizar tu negocio o agendar una asesoría?<br>Estoy aquí para ayudarte.</p>
+    </div>
+
+    <div class="bg-gray-800 rounded-lg p-4 text-sm space-y-2">
+      <div class="text-left">
+        <span class="block bg-indigo-600 px-3 py-2 rounded-tl-xl rounded-tr-xl rounded-br-xl inline-block w-fit max-w-xs">Hola DILO, ¿qué puedes hacer?</span>
+      </div>
+      <div class="text-right">
+        <span class="block bg-white text-gray-800 px-3 py-2 rounded-tl-xl rounded-tr-xl rounded-bl-xl inline-block w-fit max-w-xs">Puedo ayudarte a automatizar procesos, crear dashboards y mucho más 😉</span>
+      </div>
+    </div>
+
+    <div class="text-center mt-5">
+      <button onclick="cerrarChatbot()" class="bg-indigo-600 text-white px-5 py-2 rounded-full hover:bg-indigo-700 transition">
+        Entendido, gracias
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- 🔧 FUNCIONALIDAD -->
+<script>
+  function abrirChatbot() {
+    document.getElementById("modalChatbot").classList.remove("hidden");
+  }
+
+  function cerrarChatbot() {
+    document.getElementById("modalChatbot").classList.add("hidden");
+  }
+</script>
+
+  <!-- 🔹 SOBRE NOSOTROS MEJORADA -->
+<section id="sobre" class="py-20 bg-indigo-50" data-aos="fade-up">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h3 class="text-3xl font-bold text-indigo-700 mb-6">¿Por qué elegir D’LOGIA?</h3>
+    <p class="text-lg text-gray-700 leading-relaxed mb-8">
+      Esta plantilla fue diseñada para convertir visitantes en clientes. Es ideal para empresas, freelancers,
+      IA, automatización y marcas con visión de escalabilidad.
+    </p>
+    <div class="grid md:grid-cols-3 gap-6 mt-6">
+      <div class="flex flex-col items-center">
+        <i data-lucide="shield-check" class="w-8 h-8 text-indigo-500 mb-2"></i>
+        <p class="text-sm text-gray-600">Confianza y profesionalismo</p>
+      </div>
+      <div class="flex flex-col items-center">
+        <i data-lucide="zap" class="w-8 h-8 text-indigo-500 mb-2"></i>
+        <p class="text-sm text-gray-600">Implementación rápida</p>
+      </div>
+      <div class="flex flex-col items-center">
+        <i data-lucide="settings" class="w-8 h-8 text-indigo-500 mb-2"></i>
+        <p class="text-sm text-gray-600">Diseño flexible y escalable</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 🔹 CTA FINAL MEJORADA -->
+<section id="contacto" class="py-20 bg-white" data-aos="fade-up">
+  <div class="max-w-2xl mx-auto px-4 text-center">
+    <h3 class="text-3xl font-bold text-indigo-700 mb-6">¿Listo para personalizarla?</h3>
+    <p class="text-gray-600 mb-6 text-lg">
+      Nuestro equipo adapta esta plantilla a tu marca, sector y objetivos. ¡Contáctanos y transforma tu presencia digital!
+    </p>
+    <a href="https://wa.me/573001234567?text=Hola%20D%27LOGIA%2C%20quiero%20personalizar%20la%20plantilla%20empresarial."
+       class="inline-flex items-center gap-2 bg-green-500 text-white px-6 py-3 rounded-xl shadow hover:bg-green-600 transition">
+      <i data-lucide="message-circle" class="w-5 h-5"></i> Solicita demo por WhatsApp
+    </a>
+    <p class="text-xs text-gray-400 mt-3">Atendemos en menos de 24 horas ⏱️</p>
+  </div>
+</section>
+
+
+<!-- 🔹 FOOTER PROFESIONAL ÚNICO -->
+<footer class="bg-gray-100 text-gray-700 pt-16 pb-10 px-6 md:px-0" data-aos="fade-up">
+  <!-- DISTRIBUCIÓN BALANCEADA -->
+<div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-10">
+
+    <!-- Columna 1: Info -->
+    <div class="md:w-1/2">
+      <h4 class="text-xl font-bold text-indigo-700 mb-4 flex items-center gap-2">
+        <i data-lucide="globe" class="w-5 h-5"></i> Template Pro
+      </h4>
+      <p class="text-sm leading-relaxed text-gray-600">
+        Plantilla web moderna, adaptable y visualmente impactante.<br>
+        Ideal para agencias, freelancers y lanzamientos digitales.
+      </p>
+    </div>
+
+    <!-- Columna 2: Enlaces -->
+    <div class="md:w-1/4">
+      <h5 class="text-lg font-semibold text-indigo-700 mb-4">Navegación</h5>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#inicio" class="hover:text-indigo-500 transition">Inicio</a></li>
+        <li><a href="#servicios" class="hover:text-indigo-500 transition">Servicios</a></li>
+        <li><a href="#proyectos" class="hover:text-indigo-500 transition">Proyectos</a></li>
+        <li><a href="#contacto" class="hover:text-indigo-500 transition">Contacto</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna 3: Redes Sociales -->
+    <div class="md:w-1/4">
+      <h5 class="text-lg font-semibold text-indigo-700 mb-4">Síguenos</h5>
+      <div class="flex gap-6 items-center">
+        <a href="#" title="LinkedIn" aria-label="LinkedIn" class="text-gray-500 hover:text-indigo-600 transition">
+          <i data-lucide="linkedin" class="w-6 h-6"></i>
+        </a>
+        <a href="#" title="GitHub" aria-label="GitHub" class="text-gray-500 hover:text-black transition">
+          <i data-lucide="github" class="w-6 h-6"></i>
+        </a>
+        <a href="#" title="Instagram" aria-label="Instagram" class="text-gray-500 hover:text-pink-500 transition">
+          <i data-lucide="instagram" class="w-6 h-6"></i>
+        </a>
+        <a href="#" title="WhatsApp" aria-label="WhatsApp" class="text-gray-500 hover:text-green-500 transition">
+          <i data-lucide="phone" class="w-6 h-6"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Derechos -->
+  <div class="mt-12 border-t border-gray-300 pt-6 text-center text-xs text-gray-500">
+    © 2025 Plantilla tech desarrollada por <strong>D’LOGIA</strong>. Todos los derechos reservados.
+  </div>
+</footer>
+
+<!-- 🔹 SCRIPTS DE INICIALIZACIÓN -->
+<script>
+  AOS.init();
+  lucide.createIcons();
+
+  const body = document.getElementById("body");
+  const toggle = document.getElementById("dark-toggle");
+  const theme = localStorage.getItem("theme");
+
+  if (theme === "dark") {
+    body.classList.add("dark");
+  }
+
+  if (toggle) {
+    toggle.addEventListener("click", () => {
+      body.classList.toggle("dark");
+      const nuevoTema = body.classList.contains("dark") ? "dark" : "light";
+      localStorage.setItem("theme", nuevoTema);
+      lucide.createIcons();
+    });
+  }
+</script>
